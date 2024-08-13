@@ -1,3 +1,14 @@
+    1.laravel running time
 php artisan make:migration create_miastudent_table
+------------------
+   2.modal table create
+php artisan make:model [modal name Post]
+   
+------------
+  3.table migration
+php artisan migrate
+-------------------
+4.
+php artisan migrate:fresh
+-----------------
 
- php artisan migrate
