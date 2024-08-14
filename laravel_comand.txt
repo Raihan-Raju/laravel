@@ -12,3 +12,9 @@ php artisan migrate
 php artisan migrate:fresh
 -----------------
 
+<<<<<<< HEAD
+=======
+php artisan migrate
+
+php artisan key:generate
+>>>>>>> 368737a6966040e2543654c849999c95e3149e5b
