@@ -23,6 +23,11 @@
               <a href="/" class=" bg-green-600 text-white rounded py-2 px-4">Home</a>
               <a href="/create" class=" bg-green-600 text-white rounded py-2 px-4">Create</a>
         </div>
+        
+        @if(session('success'))
+        <h1 class="text-green-600">{{session('success')}}</h1>
+
+        @endif()
 
         <div class="row ">
         <form method="post" action="{{route('store')}}" >
