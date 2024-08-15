@@ -22,6 +22,7 @@
         <div class="flex justify-between bg-slate-600">
               <a href="/" class=" bg-green-600 text-white rounded py-2 px-4">Home</a>
               <a href="/create" class=" bg-green-600 text-white rounded py-2 px-4">Create</a>
+            
         </div>
         
         @if(session('success'))
