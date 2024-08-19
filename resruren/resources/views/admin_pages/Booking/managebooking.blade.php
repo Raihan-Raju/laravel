@@ -5,7 +5,7 @@
           
           <div class="page-inner">
             <div class="page-header">
-              <h3 class="fw-bold mb-3">Manage Item's</h3>
+              <h3 class="fw-bold mb-3">Manage booking</h3>
               <ul class="breadcrumbs mb-3">
                 <li class="nav-home">
                   <a href="#">
@@ -16,7 +16,7 @@
                   <i class="icon-arrow-right"></i>
                 </li>
                 <li class="nav-item">
-                  <a href="#">Item's</a>
+                  <a href="#">booking</a>
                 </li>
                 <li class="separator">
                   <i class="icon-arrow-right"></i>
@@ -30,14 +30,14 @@
                 <div class="card">
                   <div class="card-header">
                     <div class="d-flex align-items-center">
-                     <a href="{{url('/additems')}}"> <h4 class="card-title">Add Items</h4></a>
+                     <a href="{{url('/booking')}}"> <h4 class="card-title">Add booking</h4></a>
                       <button
                         class="btn btn-primary btn-round ms-auto"
                         data-bs-toggle="modal"
                         data-bs-target="#addRowModal"
                       >
                         <i class="fa fa-plus"></i>
-                        Add items
+                        Add booking
                       </button>
                     </div>
                   </div>
@@ -56,7 +56,7 @@
                           <div class="modal-header border-0">
                             <h5 class="modal-title">
                               <span class="fw-mediumbold"> New</span>
-                              <span class="fw-light">  items</span>
+                              <span class="fw-light">  booking</span>
                             </h5>
                             <button
                               type="button"
@@ -69,7 +69,7 @@
                           </div>
                           <div class="modal-body">
                             <p class="small">
-                              Create a new items using this form, make sure you
+                              Create a new booking using this form, make sure you
                               fill them all
                             </p>
                             <form>
@@ -97,36 +97,52 @@
                                 </div>
                                 <div class="col-md-6 pe-0">
                                   <div class="form-group form-group-default">
-                                    <label>Quantity</label>
+                                    <label>Email</label>
                                     <input
                                       id="addPosition"
                                       type="text"
                                       class="form-control"
-                                      placeholder="fill number"
+                                      placeholder="fill Email"
                                     />
                                   </div>
                                 </div>
                                 <div class="col-md-6">
                                   <div class="form-group form-group-default">
-                                    <label>Taka</label>
+                                    <label>Number</label>
                                     <input
                                       id="addOffice"
                                       type="text"
                                       class="form-control"
-                                      placeholder="amount tk"
+                                      placeholder="Contact number"
                                     />
                                   </div>
 
                                   <div class="form-group form-group-default">
-                                    <label>image</label>
+                                    <label>Subject</label>
                                     <input
                                       id="addOffice"
-                                      type="file"
+                                      type="text"
                                       class="form-control"
-                                      placeholder="items image"
+                                      placeholder="subject"
                                     />
                                   </div>
+
+                                  <label for="message">Message</label>
+                        <div class="form-floating">
+                          <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                            
+                         </div>
                                 </div>
+
+                 <button
+                        class="btn btn-primary btn-round ms-auto"
+                        data-bs-toggle="modal"
+                        data-bs-target="#addRowModal"
+                      >
+                        <i class="fa fa-plus"></i>
+                       Submit
+                 </button>
+
                               </div>
                             </form>
                           </div>
@@ -143,10 +159,11 @@
                         <thead>
                           <tr>
                             <th>ID#</th>
-                            <th>Items Name</th>
-                            <th>Quentity</th>
-                            <th>Taka</th>
-                            <th>Image</th>
+                            <th>Cliend Name</th>
+                            <th>Email</th>
+                            <th>Number</th>
+                            <th>Subject</th>
+                            <th>Message</th>
                            
                             <th style="width: 10%">Action</th>
                           </tr>
@@ -156,9 +173,10 @@
                           <tr>
                             <td>01</td>
                             <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>360</td>
-                            <td>tyhrd</td>
+                            <td>Edinburgh@gmail.com</td>
+                            <td>36054654645</td>
+                            <td>Booking</td>
+                            <td>good/dood</td>
                             <td>
                               <div class="form-button-action">
                                 <button

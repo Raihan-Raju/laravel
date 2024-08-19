@@ -2,12 +2,12 @@
         <div class="sidebar-logo">
           <!-- Logo Header -->
           <div class="logo-header" data-background-color="dark">
-            <a href="{{url('/dashbord')}}" class="logo">
+            <a href="{{url('/')}}" class="logo">
               <img
-                src="assets/img/kaiadmin/logo_light.svg"
+                src="assets/img/kaiadmin/Salsabillogo.png"
                 alt="navbar brand"
                 class="navbar-brand"
-                height="20"
+                height="30"
               />
             </a>
 
@@ -35,7 +35,7 @@
               <li class="nav-item">
                 <a
                   data-bs-toggle="collapse"
-                  href="#dashboard"
+                  href="{{url('/dashbord')}}"
                   class="collapsed"
                   aria-expanded="false"
                 >
@@ -128,12 +128,12 @@
                 <div class="collapse" id="charts">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="charts/charts.html">
+                      <a href="{{url('/booking')}}">
                         <span class="sub-item">Booking_add</span>
                       </a>
                     </li>
                     <li>
-                      <a href="charts/sparkline.html">
+                      <a href="{{url('/managebooking')}}">
                         <span class="sub-item">Booking_manege</span>
                       </a>
                     </li>
@@ -164,12 +164,12 @@
                       <div class="collapse" id="subnav1">
                         <ul class="nav nav-collapse subnav">
                           <li>
-                            <a href="#">
+                            <a href="{{url('/addstaff')}}">
                               <span class="sub-item">Staff_Add</span>
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a href="{{url('/managestaff')}}">
                               <span class="sub-item">Staff_manage</span>
                             </a>
                           </li>
@@ -191,11 +191,7 @@
                         </ul>
                       </div>
                     </li>
-                    <li>
-                      <a href="#">
-                        <span class="sub-item">Level 1</span>
-                      </a>
-                    </li>
+                   
                   </ul>
                 </div>
               </li>

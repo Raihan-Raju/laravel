@@ -203,7 +203,7 @@ input[type="submit"]:active
     <div class="content"> 
 
      <h2>Sign In  </h2>
-     <h2 style="text-align: center; color: white;">Salsabil Restora</h2>
+     <h2 style="text-align: center; color: white;">Salcabil Restora</h2>
 
      <div class="form"> 
 

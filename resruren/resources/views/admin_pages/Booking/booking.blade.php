@@ -5,7 +5,7 @@
           
           <div class="page-inner">
             <div class="page-header">
-              <h3 class="fw-bold mb-3">Add Item's</h3>
+              <h3 class="fw-bold mb-3">Add booking</h3>
               <ul class="breadcrumbs mb-3">
                 <li class="nav-home">
                   <a href="#">
@@ -16,7 +16,7 @@
                   <i class="icon-arrow-right"></i>
                 </li>
                 <li class="nav-item">
-                  <a href="#">Item's</a>
+                  <a href="#">booking</a>
                 </li>
                 <li class="separator">
                   <i class="icon-arrow-right"></i>
@@ -30,57 +30,60 @@
               <div class="col-md-12">
                 <div class="card">
                   <div class="card-header">
-                    <div class="card-title">Manu Of items</div>
+                    <div class="card-title">Booking services</div>
                   </div>
                   <div class="card-body">
                     <div class="row">
                       <div class="col-md-12 col-lg-12">
                         <div class="form-group">
-                          <label for="email2">Items Name</label>
+                          <label for="email2">Your Name</label>
                           <input
                             type="email"
                             class="form-control"
                             id="email2"
-                            placeholder="Enter Items Name"
+                            placeholder="Enter Customer Name"
                           />
                           <small id="emailHelp2" class="form-text text-muted"
-                            >Great foods</small
+                            >Great </small
+                          >
+                        </div>
+
+                        <div class="form-group">
+                          <label for="email2">Email</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email2"
+                            placeholder="Customer Email"
+                          />
+                          <small id="emailHelp2" class="form-text text-muted"
+                            ></small
                           >
                         </div>
                         <div class="form-group">
-                          <label for="password">Quantity</label>
+                          <label for="password">Number</label>
                           <input
                             type="number"
                             class="form-control"
                             id="password"
-                            placeholder="Quantity...1.2.3.."
+                            placeholder="Number"
                           />
                         </div>
 
                         <div class="form-group">
-                          <label for="password">Taka</label>
+                          <label for="password">Subject</label>
                           <input
-                            type="number"
+                            type="text"
                             class="form-control"
                             id="password"
-                            placeholder="Amount of items tk"
+                            placeholder="Subject"
                           />
                         </div>
-                        <div class="form-group form-inline">
-                          <label
-                            for="inlineinput"
-                            class="col-md-3 col-form-label"
-                            >images</label
-                          >
-                          <div class="col-md-9 p-0">
-                            <input
-                              type="file"
-                              class="form-control input-full"
-                              id="inlineinput"
-                              placeholder="Enter Input"
-                            />
-                          </div>
-                        </div>
+                        <label for="message">Message</label>
+                        <div class="form-floating">
+                          <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                            
+                         </div>
                       
                         <!-- <div class="form-group">
                           <label for="smallSelect">Small Select</label>

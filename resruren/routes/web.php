@@ -48,5 +48,17 @@ Route::get('/additems', function () {
 Route::get('/manageitems', function () {
     return view('admin_pages.items.manageitems');
 });
+Route::get('/booking', function () {
+    return view('admin_pages.booking.booking');
+});
+Route::get('/managebooking', function () {
+    return view('admin_pages.booking.managebooking');
+});
+Route::get('/addstaff', function () {
+    return view('admin_pages.staff.addstaff');
+});
+Route::get('/managestaff', function () {
+    return view('admin_pages.staff.managestaff');
+});
 
 // Route::get('/about',Controller,about);

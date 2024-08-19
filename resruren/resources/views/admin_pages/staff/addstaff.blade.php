@@ -5,7 +5,7 @@
           
           <div class="page-inner">
             <div class="page-header">
-              <h3 class="fw-bold mb-3">Add Item's</h3>
+              <h3 class="fw-bold mb-3">Add Staff</h3>
               <ul class="breadcrumbs mb-3">
                 <li class="nav-home">
                   <a href="#">
@@ -16,7 +16,7 @@
                   <i class="icon-arrow-right"></i>
                 </li>
                 <li class="nav-item">
-                  <a href="#">Item's</a>
+                  <a href="#">Staff</a>
                 </li>
                 <li class="separator">
                   <i class="icon-arrow-right"></i>
@@ -30,47 +30,17 @@
               <div class="col-md-12">
                 <div class="card">
                   <div class="card-header">
-                    <div class="card-title">Manu Of items</div>
+                    <div class="card-title">List of Staff(Employee)</div>
                   </div>
                   <div class="card-body">
                     <div class="row">
                       <div class="col-md-12 col-lg-12">
-                        <div class="form-group">
-                          <label for="email2">Items Name</label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="email2"
-                            placeholder="Enter Items Name"
-                          />
-                          <small id="emailHelp2" class="form-text text-muted"
-                            >Great foods</small
-                          >
-                        </div>
-                        <div class="form-group">
-                          <label for="password">Quantity</label>
-                          <input
-                            type="number"
-                            class="form-control"
-                            id="password"
-                            placeholder="Quantity...1.2.3.."
-                          />
-                        </div>
 
-                        <div class="form-group">
-                          <label for="password">Taka</label>
-                          <input
-                            type="number"
-                            class="form-control"
-                            id="password"
-                            placeholder="Amount of items tk"
-                          />
-                        </div>
-                        <div class="form-group form-inline">
+                      <div class="form-group form-inline">
                           <label
                             for="inlineinput"
                             class="col-md-3 col-form-label"
-                            >images</label
+                            >employee images</label
                           >
                           <div class="col-md-9 p-0">
                             <input
@@ -81,6 +51,38 @@
                             />
                           </div>
                         </div>
+                        <div class="form-group">
+                          <label for="email2">Employee Name</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email2"
+                            placeholder="Enter employee Name"
+                          />
+                          <small id="emailHelp2" class="form-text text-muted"
+                            ></small
+                          >
+                        </div>
+                        <div class="form-group">
+                          <label for="Possition">Possition</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="Possition"
+                            placeholder="title..."
+                          />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="Selary">Selary</label>
+                          <input
+                            type="number"
+                            class="form-control"
+                            id="Selary"
+                            placeholder="Amount of Selary tk"
+                          />
+                        </div>
+                       
                       
                         <!-- <div class="form-group">
                           <label for="smallSelect">Small Select</label>
