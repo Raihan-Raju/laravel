@@ -66,8 +66,8 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                            <label for="subject">Subject</label>
+                                            <input type="number" class="form-control" id="subject" placeholder="Subject">
+                                            <label for="subject">Number</label>
                                         </div>
                                     </div>
                                     <div class="col-12">

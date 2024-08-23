@@ -128,6 +128,7 @@
                                   </div>
                                 </div>
                               </div>
+                              <input type="submit" name="submit" value="submit" class="btn btn-success">
                             </form>
                           </div>
                          

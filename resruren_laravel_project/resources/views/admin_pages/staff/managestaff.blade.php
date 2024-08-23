@@ -76,15 +76,7 @@
                               <div class="row">
                                 <div class="col-sm-12">
 
-                                <!-- <div class="form-group form-group-default">
-                                    <label>ID#</label>
-                                    <input
-                                      id="id"
-                                      type="text"
-                                      class="form-control"
-                                      placeholder=""
-                                    />
-                                  </div> -->
+                            
                                   <div class="form-group form-group-default">
                                     <label>image</label>
                                     <input
@@ -130,6 +122,7 @@
                                  
                                 </div>
                               </div>
+                              <input type="submit" name="submit" value="submit" class="btn btn-success">
                             </form>
                           </div>
                          

@@ -67,4 +67,14 @@ Route::get('/managestaff', function () {
     return view('admin_pages.staff.managestaff');
 });
 
+Route::get('/customermanage', function () {
+    return view('admin_pages.customer_manage.customermanage');
+});
+Route::get('/addcost', function () {
+    return view('admin_pages.cost.addcost');
+});
+Route::get('/managecost', function () {
+    return view('admin_pages.cost.managecost');
+});
+
 // Route::get('/about',Controller,about);

@@ -33,25 +33,8 @@
           <div class="sidebar-content">
             <ul class="nav nav-secondary">
               <li class="nav-item">
-                <a
-                  data-bs-toggle="collapse"
-                  href="{{url('/dashbord')}}"
-                  class="collapsed"
-                  aria-expanded="false"
-                >
-                  <i class="fas fa-home"></i>
-                  <p>Dashboard</p>
-                  <span class="caret"></span>
-                </a>
-                <div class="collapse" id="dashboard">
-                  <ul class="nav nav-collapse">
-                    <li>
-                      <a href="{{url('/')}}">
-                        <span class="sub-item">user panel</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                <a href="{{url('/dashbord')}}"> <i class="fas fa-home"></i> <p>Dashboard</p></a>
+               
               </li>
             
              
@@ -95,6 +78,11 @@
                         <span class="sub-item">Seles manege</span>
                       </a>
                     </li>
+                    <li>
+                      <a href="{{url('/customermanage')}}">
+                        <span class="sub-item">Customer manege</span>
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </li>
@@ -107,12 +95,12 @@
                 <div class="collapse" id="maps">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="maps/googlemaps.html">
+                      <a href="{{url('/addcost')}}">
                         <span class="sub-item">Cost Add</span>
                       </a>
                     </li>
                     <li>
-                      <a href="maps/jsvectormap.html">
+                      <a href="{{url('/managecost')}}">
                         <span class="sub-item">Cost Manege</span>
                       </a>
                     </li>
