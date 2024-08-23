@@ -5,7 +5,7 @@
           
           <div class="page-inner">
             <div class="page-header">
-              <h3 class="fw-bold mb-3">Manage Employee (Staff)</h3>
+              <h3 class="fw-bold mb-3">Manage Cost</h3>
               <ul class="breadcrumbs mb-3">
                 <li class="nav-home">
                   <a href="#">
@@ -16,7 +16,7 @@
                   <i class="icon-arrow-right"></i>
                 </li>
                 <li class="nav-item">
-                  <a href="#">Item's</a>
+                  <a href="#">Cost</a>
                 </li>
                 <li class="separator">
                   <i class="icon-arrow-right"></i>
@@ -30,21 +30,21 @@
                 <div class="card">
                   <div class="card-header">
                     <div class="d-flex align-items-center">
-                     <a href="{{url('/addstaff')}}"> <h4 class="card-title">Add Employee</h4></a>
+                     <a href="{{url('/booking')}}"> <h4 class="card-title">Add Cost</h4></a>
                       <button
                         class="btn btn-primary btn-round ms-auto"
                         data-bs-toggle="modal"
                         data-bs-target="#addRowModal"
                       >
                         <i class="fa fa-plus"></i>
-                        Add Employee
+                        Add Cost
                       </button>
                     </div>
                   </div>
                   <div class="card-body">
                     <!-- Modal -->
   <!-- -------------popup--------- -->
-                    <div
+  <div
                       class="modal fade"
                       id="addRowModal"
                       tabindex="-1"
@@ -56,7 +56,7 @@
                           <div class="modal-header border-0">
                             <h5 class="modal-title">
                               <span class="fw-mediumbold"> New</span>
-                              <span class="fw-light">  Employee</span>
+                              <span class="fw-light">  Cost</span>
                             </h5>
                             <button
                               type="button"
@@ -69,67 +69,67 @@
                           </div>
                           <div class="modal-body">
                             <p class="small">
-                              Create a new Employee using this form, make sure you
+                              Create a new Cost using this form, make sure you
                               fill them all
                             </p>
                             <form>
                               <div class="row">
                                 <div class="col-sm-12">
 
-                                <!-- <div class="form-group form-group-default">
-                                    <label>ID#</label>
-                                    <input
-                                      id="id"
-                                      type="text"
-                                      class="form-control"
-                                      placeholder=""
-                                    />
-                                  </div> -->
-                                  <div class="form-group form-group-default">
-                                    <label>image</label>
-                                    <input
-                                      id="addOffice"
-                                      type="file"
-                                      class="form-control"
-                                      placeholder="items image"
-                                    />
-                                  </div>
+                            
+                                
 
                                   <div class="form-group form-group-default">
-                                    <label>Employee Name </label>
+                                    <label> Name of Cost </label>
                                     <input
                                       id="addName"
                                       type="text"
                                       class="form-control"
-                                      placeholder="items name"
+                                      placeholder="Cost"
                                     />
                                   </div>
                                 </div>
                                 <div class="col-md-6 pe-0">
                                   <div class="form-group form-group-default">
-                                    <label>Position(title)</label>
+                                    <label>Quantity</label>
                                     <input
                                       id="Position"
-                                      type="text"
+                                      type="number"
                                       class="form-control"
-                                      placeholder="Position"
+                                      placeholder="Quantity"
                                     />
                                   </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 pe-0">
                                   <div class="form-group form-group-default">
-                                    <label>Selary</label>
+                                    <label>cost tk</label>
                                     <input
                                       id="addOffice"
-                                      type="text"
+                                      type="Number"
                                       class="form-control"
-                                      placeholder="Selary amount tk"
+                                      placeholder="tk"
                                     />
                                   </div>
+                                  </div>
+
+                                  
+                                  <div class="col-md-6 pe-0">
+                                  <div class="form-group form-group-default">
+                                    <label>Aditional-Note</label>
+                                    <input
+                                      id="addOffice"
+                                      type="textarea"
+                                      class="form-control"
+                                      placeholder="Aditional-Note"
+                                    />
+                                  </div>
+                                  </div>
+                    
 
                                  
                                 </div>
                               </div>
+                              <input type="submit" name="submit" value="submit" class="btn btn-success">
                             </form>
                           </div>
                          
@@ -145,11 +145,10 @@
                         <thead>
                           <tr>
                             <th>ID#</th>
-                            <th>Image</th>
-                            <th>Employee Name</th>
-                            <th>Possition(title)</th>
-                            <th>Selary</th>
-                           
+                            <th>cost Name</th>
+                            <th>Quantity</th>
+                            <th>Cost-taka</th>
+                            <th>Aditional-Note</th>
                            
                             <th style="width: 10%">Action</th>
                           </tr>
@@ -159,9 +158,9 @@
                           <tr>
                             <td>01</td>
                             <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>Manager</td>
-                            <td>36000tk</td>
+                            <td>Edinburgh@gmail.com</td>
+                            <td>36054654645</td>
+                            <td>good/dood</td>
                             <td>
                               <div class="form-button-action">
                                 <button

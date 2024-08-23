@@ -5,7 +5,7 @@
           
           <div class="page-inner">
             <div class="page-header">
-              <h3 class="fw-bold mb-3">Manage booking</h3>
+              <h3 class="fw-bold mb-3">Manage customer</h3>
               <ul class="breadcrumbs mb-3">
                 <li class="nav-home">
                   <a href="#">
@@ -16,7 +16,7 @@
                   <i class="icon-arrow-right"></i>
                 </li>
                 <li class="nav-item">
-                  <a href="#">booking</a>
+                  <a href="#">customer</a>
                 </li>
                 <li class="separator">
                   <i class="icon-arrow-right"></i>
@@ -30,14 +30,14 @@
                 <div class="card">
                   <div class="card-header">
                     <div class="d-flex align-items-center">
-                     <a href="{{url('/booking')}}"> <h4 class="card-title">Add booking</h4></a>
+                     <a href="{{url('/addstaff')}}"> <h4 class="card-title">Add customer</h4></a>
                       <button
                         class="btn btn-primary btn-round ms-auto"
                         data-bs-toggle="modal"
                         data-bs-target="#addRowModal"
                       >
                         <i class="fa fa-plus"></i>
-                        Add booking
+                        Add customer
                       </button>
                     </div>
                   </div>
@@ -56,7 +56,7 @@
                           <div class="modal-header border-0">
                             <h5 class="modal-title">
                               <span class="fw-mediumbold"> New</span>
-                              <span class="fw-light">  booking</span>
+                              <span class="fw-light">  customer</span>
                             </h5>
                             <button
                               type="button"
@@ -69,81 +69,60 @@
                           </div>
                           <div class="modal-body">
                             <p class="small">
-                              Create a new booking using this form, make sure you
+                              Create a new customer using this form, make sure you
                               fill them all
                             </p>
                             <form>
                               <div class="row">
                                 <div class="col-sm-12">
 
-                                <div class="form-group form-group-default">
-                                    <label>ID#</label>
-                                    <input
-                                      id="id"
-                                      type="text"
-                                      class="form-control"
-                                      placeholder=""
-                                    />
-                                  </div>
+        
+
                                   <div class="form-group form-group-default">
-                                    <label>Name </label>
+                                    <label>customer Name </label>
                                     <input
                                       id="addName"
                                       type="text"
                                       class="form-control"
-                                      placeholder="items name"
+                                      placeholder="customer name"
                                     />
                                   </div>
                                 </div>
                                 <div class="col-md-6 pe-0">
                                   <div class="form-group form-group-default">
-                                    <label>Email</label>
+                                    <label>Location</label>
                                     <input
-                                      id="addPosition"
+                                      id="Position"
                                       type="text"
                                       class="form-control"
-                                      placeholder="fill Email"
+                                      placeholder="Location"
                                     />
                                   </div>
                                 </div>
                                 <div class="col-md-6">
                                   <div class="form-group form-group-default">
+                                    <label>email</label>
+                                    <input
+                                      id="addOffice"
+                                      type="email"
+                                      class="form-control"
+                                      placeholder="email"
+                                    />
+                                  </div>
+                                  <div class="form-group form-group-default">
                                     <label>Number</label>
                                     <input
                                       id="addOffice"
-                                      type="text"
+                                      type="Number"
                                       class="form-control"
-                                      placeholder="Contact number"
+                                      placeholder="Number"
                                     />
                                   </div>
 
-                                  <div class="form-group form-group-default">
-                                    <label>Subject</label>
-                                    <input
-                                      id="addOffice"
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="subject"
-                                    />
-                                  </div>
-
-                                  <label for="message">Message</label>
-                        <div class="form-floating">
-                          <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                            
-                         </div>
+                                 
                                 </div>
-
-                 <button
-                        class="btn btn-primary btn-round ms-auto"
-                        data-bs-toggle="modal"
-                        data-bs-target="#addRowModal"
-                      >
-                        <i class="fa fa-plus"></i>
-                       Submit
-                 </button>
-
                               </div>
+                              <input type="submit" name="submit" value="submit" class="btn btn-success">
                             </form>
                           </div>
                          
@@ -159,11 +138,11 @@
                         <thead>
                           <tr>
                             <th>ID#</th>
-                            <th>Cliend Name</th>
-                            <th>Email</th>
+                            <th>Customer Name</th>
+                            <th>location</th>
+                            <th>email</th>
                             <th>Number</th>
-                            <th>Subject</th>
-                            <th>Message</th>
+                           
                            
                             <th style="width: 10%">Action</th>
                           </tr>
@@ -173,10 +152,9 @@
                           <tr>
                             <td>01</td>
                             <td>System Architect</td>
-                            <td>Edinburgh@gmail.com</td>
-                            <td>36054654645</td>
-                            <td>Booking</td>
-                            <td>good/dood</td>
+                            <td>Edinburgh</td>
+                            <td>Manager</td>
+                            <td>52456461654</td>
                             <td>
                               <div class="form-button-action">
                                 <button

@@ -69,7 +69,8 @@
 
   <div class="row">
           <!-- customer details content -->
-          <div class="row col col-md-12">
+       <form action="" method="post" class="form-control">
+           <div class="row col col-md-12">
             <div class="col col-md-3 form-group">
               <label class="font-weight-bold" for="customers_name">Customer Name :</label>
               <input id="customers_name" type="text" class="form-control" placeholder="Customer Name" name="customers_name" onkeyup="showSuggestions(this.value, 'customer');">
@@ -102,43 +103,51 @@
 
           <!-- new user button -->
           <div class="row col col-md-12">
-            <div class="col col-md-2 form-group">
-              <button class="btn btn-primary form-control" onclick="document.getElementById('add_new_customer_model').style.display = 'block';">New Customer</button>
-            </div>
-            <div class="col col-md-1 form-group"></div>
+            
+            
             <div class="col col-md-2 form-group">
               <label class="font-weight-bold" for="customers_contact_number">Contact Number :</label>
               <input id="customers_contact_number" type="number" class="form-control" name="customers_contact_number" placeholder="Contact Number">
             </div>
+            <!-- <div class="col col-md-1 form-group">
+               <input type="submit" value="submit" name="submit" class="btn btn-primary form-control">
+            </div> -->
+            <div class="col col-md-2 form-group">
+              <button class="btn btn-primary form-control" onclick="document.getElementById('add_new_customer_model').style.display = 'block';" name="submit" type="submit">Add New Customer</button>
+
+            </div>
           </div>
+       </form>
           <!-- closing new user button -->
 
           <div class="col col-md-12">
             <hr class="col-md-12" style="padding: 0px; border-top: 3px solid  #02b6ff;">
           </div>
 
-          <!-- add medicines -->
-          <div class="row col col-md-12">
+             
+          <!-- add Items -->
+  <form action="" method="post" class="form-control">
+  <div class="row col col-md-12">
             <div class="row col col-md-12 font-weight-bold">
-              <div class="col col-md-2" for="items Name">Items Name:</div>
+              <div class="col col-md-3" for="items Name">Items Name:</div>
              
               <div class="col col-md-2"for="Quantity">Quantity</div>
               <div class="col col-md-2"for="MRP">MRP</div>
               <div class="col col-md-2"for="Discount">Discount(%)</div>
-              <div class="col col-md-2"for="Total">Total</div>
-              <div class="col col-md-2"for="Action">Action</div>
+              <div class="col col-md-3"for="Total">Total</div>
+              <!-- <div class="col col-md-2"for="Action">Action</div> -->
             </div>
           </div>
           <div class="row col col-md-12">
             <div class="row col col-md-12 font-weight-bold">
-              <div class="col col-md-2"><input id="items Name" type="text" class="form-control" name="items Name" placeholder="items Name" ></div>
+              <div class="col col-md-3"><input id="items Name" type="text" class="form-control" name="items Name" placeholder="items Name" ></div>
 
               <div class="col col-md-2"><input id="Quantity" type="number" class="form-control" name="Quantity" placeholder="Quantity" ></div>
               <div class="col col-md-2"><input id="MRP" type="text" class="form-control" name="MRP" placeholder="MRP" ></div>
               <div class="col col-md-2"><input id="Discount" type="text" class="form-control" name="Discount" placeholder="Discount" ></div>
-              <div class="col col-md-2"><input id="Total" type="text" class="form-control" name="Total" placeholder="Total" ></div>
-              <div class="col col-md-2"><input id="Action" type="text" class="form-control" name="Action" placeholder="Action" ></div>
-            </div>
+              <div class="col col-md-3"><input id="Total" type="text" class="form-control" name="Total" placeholder="Total" ></div>
+              <!-- <div class="col col-md-2"><input id="Action" type="text" class="form-control" name="Action" placeholder="Action" ></div>
+            </div> -->
           </div>
           <div class="col col-md-12">
             <hr class="col-md-12" style="padding: 0px; border-top: 2px solid  #02b6ff;">
@@ -165,24 +174,24 @@
               <input type="text" class="form-control" value="0" id="net_total" >
             </div>
           </div>
-
-        
-        </div>
-        <!-- form content end -->
+          
+                <div>
                    <hr style="border-top: 2px solid #ff5252;">
-                             </div>
-                          </div>
-
-       
-
-                    <button class="btn btn-success  text-right">Submit</button>
-                    <!-- <button class="btn btn-danger">Cancel</button> -->
+                </div>
+        
+                        </div>
+     <input type="submit" name="submit" value="submit" class="form-control btn btn-success">
+        <!-- <button class="btn btn-success  text-right">Submit</button> -->
+         <!-- <button class="btn btn-danger">Cancel</button> -->
+  </form>
+           <!-- form content end -->
                   </div>
                 </div>
               </div>
             </div>
           </div>
          
+        </div>
         </div>
     
       
