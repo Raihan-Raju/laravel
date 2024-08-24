@@ -3,6 +3,7 @@
 
 <div class="container">
           
+          
           <div class="page-inner">
             <div class="page-header">
               <h3 class="fw-bold mb-3">Add Item's</h3>
@@ -32,7 +33,9 @@
                   <div class="card-header">
                     <div class="card-title">Manu Of items</div>
                   </div>
-                  <div class="card-body">
+                 <form action="" method="post" class="form-control">
+                  @csrf
+                 <div class="card-body">
                     <div class="row">
                       <div class="col-md-12 col-lg-12">
                         <div class="form-group">
@@ -63,7 +66,7 @@
                             type="number"
                             class="form-control"
                             id="password"
-                            placeholder="Amount of items tk"
+                            placeholder="Amount of items tk" name="number"
                           />
                         </div>
                         <div class="form-group form-inline">
@@ -102,11 +105,13 @@
                     <button class="btn btn-success">Submit</button>
                     <!-- <button class="btn btn-danger">Cancel</button> -->
                   </div>
+                 </form>
                 </div>
               </div>
             </div>
           </div>
          
+        
         </div>
 
        
