@@ -1,4 +1,5 @@
-    1.laravel running time
+composer create-project laravel/laravel example-app   
+ 1.laravel running time
 php artisan make:migration create_miastudent_table
 ------------------
    2.modal table create
