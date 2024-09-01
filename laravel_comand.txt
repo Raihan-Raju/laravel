@@ -1,4 +1,5 @@
-    1.laravel running time
+composer create-project laravel/laravel example-app   
+ 1.laravel running time
 php artisan make:migration create_miastudent_table
 ------------------
    2.modal table create
@@ -19,3 +20,19 @@ php artisan migrate
 php artisan key:generate
 >>>>>>> 
 
+<<<<<<< HEAD
+=======
+php artisan make:model Item -mc .
+php artisan migrate:fresh .
+
+
+----------make table---------
+php artisan make:migration create_users_table 
+
+----make model --------
+php artisan make:model User 
+php artisan make:model Role
+
+------------make Controller----------
+php artisan make:controller UserController
+>>>>>>> 76de274c8fe9e787cb44e8e011aa8f8ee5be7ba0
