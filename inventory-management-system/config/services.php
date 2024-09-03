@@ -14,7 +14,6 @@ return [
     |
     */
 
-<<<<<<<< HEAD:inventory-management-system/config/services.php
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),
@@ -22,8 +21,6 @@ return [
         'scheme' => 'https',
     ],
 
-========
->>>>>>>> 76de274c8fe9e787cb44e8e011aa8f8ee5be7ba0:restoran-HTML_template/resruren_laravel_template/vendor/laravel/framework/config/services.php
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),
     ],
@@ -32,17 +29,6 @@ return [
         'key' => env('AWS_ACCESS_KEY_ID'),
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
-    ],
-
-    'resend' => [
-        'key' => env('RESEND_KEY'),
-    ],
-
-    'slack' => [
-        'notifications' => [
-            'bot_user_oauth_token' => env('SLACK_BOT_USER_OAUTH_TOKEN'),
-            'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
-        ],
     ],
 
 ];

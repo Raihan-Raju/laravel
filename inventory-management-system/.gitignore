@@ -8,10 +8,6 @@
 .env
 .env.backup
 .env.production
-<<<<<<<< HEAD:inventory-management-system/.gitignore
-========
-.phpactor.json
->>>>>>>> 76de274c8fe9e787cb44e8e011aa8f8ee5be7ba0:table_realation/many_to_many/hasmany_through/.gitignore
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
