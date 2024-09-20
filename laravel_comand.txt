@@ -37,4 +37,78 @@ php artisan make:model Role
 php artisan make:controller UserController
 >>>>>>> 76de274c8fe9e787cb44e8e011aa8f8ee5be7ba0
 
-Progress bar
+Programe
+
+1.------first create new laravel project------------
+
+composer create-project laravel/laravel example-app
+
+2.-----.env + Databage create -------
+
+php artisan migration.
+
+3.----- create fronend / react install by vite---
+
+npm create vite@latest
+cd my-project
+npm install
+npm run dev
+
+4.-------React router DOM------
+npm install react-router-dom -s
+
+5.----
+import {BrowserRouter as Router, Routes,Route} from 'react-router-dom'
+
+
+
+4.-----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
