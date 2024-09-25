@@ -66,6 +66,18 @@ import {BrowserRouter as Router, Routes,Route} from 'react-router-dom'
 
 
 
+ ----migration-----
+php artisan migrate:fresh
+----table cration--------
+php artisan make:migration create_users_table
+php artisan make:migration create_tickets_table
+--------model-----------
+php artisan make:model User 
+-------controller----------
+php artisan make:controller UserController
+php artisan make:controller TicketController
+
+
 
 
 
