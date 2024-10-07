@@ -15,7 +15,9 @@ class UserController extends Controller
 
     public function createData(){
 
-        $users = DB::table('users') 
+        
+
+        $users = DB::table('users')    
                         ->insert([
                            [ 
                             'name'=>'Raihan',
@@ -34,9 +36,7 @@ class UserController extends Controller
 
                         ]);
 
-        if($users) { 
-            echo "<h1>Data Inserted Successfully</h1>";
-    }   
+    return redirect()->route('viewData'); 
 
 
 }                

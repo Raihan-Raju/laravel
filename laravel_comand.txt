@@ -11,6 +11,12 @@
 -------------------
 4.
 ## php artisan migrate:fresh
+## php artisan migrate --seed
+
+-------for email password ---------
+
+#### php artisan db:seed
+
 -----------------
 
 <<<<<<< HEAD

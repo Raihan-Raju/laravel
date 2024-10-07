@@ -17,21 +17,21 @@
             <div class="col-2"></div>
             <div class="col-8">
                
-                <form action="/store" method="post" enctype="multipart/form-data" class="form-control">
+                <form action="" method="post"  class="form-control">
                     @csrf
                     <marquee class="text-danger bg-dark fw-bold p-3">laravel_10_crud//// practice of Raihan Raju</marquee>
 
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Name---" required>
+                    <input type="text" name="name" id="name" value="{{old('name')}}" class="form-control" placeholder="Name---" required>
 
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Email---" required>
+                    <input type="email" name="email" id="email" value="{{old('email')}}" class="form-control" placeholder="Email---" required>
 
                     <label for="number">Number</label>
-                    <input type="text" name="number" id="number" class="form-control" placeholder="Number---" required>
+                    <input type="text" name="number" id="number" value="{{old('number')}}" class="form-control" placeholder="Number---" required>
 
                     <label for="address">Address</label>
-                    <input type="text" name="address" id="address" placeholder="Address" class="form-control" required>
+                    <input type="text" name="address" id="address" value="{{old('address')}}" placeholder="Address" class="form-control" required>
 
                     
                     <button type="submit" class="btn btn-primary mt-3">Submit</button>
@@ -39,6 +39,8 @@
             </div>
         </div>
     </div>
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
