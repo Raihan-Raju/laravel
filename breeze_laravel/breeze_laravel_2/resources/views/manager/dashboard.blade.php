@@ -1,7 +1,8 @@
+
 <x-app-layout>
     <x-slot name="header">
         <h2 class="text-xl font-semibold leading-tight text-gray-800">
-            user
+            Manager
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
