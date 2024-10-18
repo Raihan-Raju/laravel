@@ -4,6 +4,7 @@ use App\Http\Controllers\Backend\AdminController;
 use App\Http\Controllers\Backend\ManagerController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,7 +27,7 @@ Route::get('/dashboard', function () {
 
     switch(Auth::user()->role){
         case'admin':
-        return redirect('/dashboard/admin');
+        return Redirect::route('Dashboard.admin');
 
         case'manager':
         return redirect('/dashboard/manager');
@@ -45,5 +46,5 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
-Route::get('/dashboard/admin',[AdminController::class,'index']);
+Route::get('/dashboard/admin',[AdminController::class,'index'])->name('Dashboard.admin');
 Route::get('/dashboard/manager',[ManagerController::class,'index']);

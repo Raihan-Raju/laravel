@@ -15,54 +15,54 @@ class UserController extends Controller
 
     public function createData(){
 
-        
 
-        $users = DB::table('users')    
+
+        $users = DB::table('users')
                         ->insert([
-                           [ 
-                            'name'=>'Raihan',
+                           [
+                            'name'=>'molla Raju',
                             'email' =>'raju@gmail.com',
                             'number'=>'01516125589',
-                            'address'=>'lalbagh Dhaka',
-                            
+                            'address'=>' Dhaka',
+
                            ],
-                           [ 
+                           [
                             'name'=>'tuhin',
                             'email' =>'tuhin@gmail.com',
                             'number'=>'45656534',
-                            'address'=>'uttora Dhaka',
-                            
+                            'address'=>'Dhaka',
+
                         ]
 
                         ]);
 
-    return redirect()->route('viewData'); 
+    return redirect()->route('viewData');
 
 
-}                
-                        
- public function updateData(){ 
+}
+
+ public function updateData(){
     $users  = DB::table('users')
                     ->where('id',1)
-                    ->update([ 
+                    ->update([
                         'number'=>'44444',
                         'name'=>'Raihan Molla Raju',
 
                     ]);
 
-     if($users){ 
+     if($users){
         echo "<h1>Data Updated Successfully</h1>";
-     } else { 
+     } else {
         echo "<h1>Data Not Updated</h1>";
-     }             
- }   
- 
- public function deleteData(string $id){ 
+     }
+ }
+
+ public function deleteData(string $id){
     $users = DB::table('users')
                 ->where('id', $id)
                 ->delete();
 
-     return redirect()->route('viewData');           
+     return redirect()->route('viewData');
  }
 
 
