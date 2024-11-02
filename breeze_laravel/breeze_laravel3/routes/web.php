@@ -27,9 +27,7 @@ Route::get('/dashboard', function () {
 
     switch(Auth::user()->role){
         case'admin':
-        return Redirect::route('
-
-        Dashboard.admin');
+        return Redirect::route('Dashboard.admin');
 
         case'manager':
         return redirect('/dashboard/manager');
